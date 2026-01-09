@@ -1,0 +1,16 @@
+﻿Options -Indexes
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|png|jpg|jpeg|webp|svg)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+<FilesMatch "(config\.php|db\.php|auth\.php|csrf\.php|i18n\.php|helpers\.php|dump\.sql)">
+  Require all denied
+</FilesMatch>
