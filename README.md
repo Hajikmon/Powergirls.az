@@ -129,13 +129,5 @@ Axtaris title ve description sahalarinda isleyir.
 - `uploads/` – yuklenen sekiller
 - `sql/dump.sql` – DB strukturu ve demo data
 
-## 12) GitHub-a yukleme (qisa)
-
-```
-git add .
-git commit -m "Update"
-git push
-```
-
 ---
 Suallar ucun: admin panelden Settings bolmesine bax ve DB `settings` cedvelini yoxla SAOLLLLLLLLLL.
